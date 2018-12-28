@@ -1,0 +1,22 @@
+***************************************************
+***              abiquo-wiki                    ***
+***************************************************
+
+*** scripts_code_to_wiki **************************
+
+Collection of shell/awk scripts to convert java and 
+properties files to Confluence wiki format
+
+*** events_java_to_wiki
+*** javaerrs_to_wiki
+*** privilege_to_wiki
+*** tracerpro_to_wiki 
+
+*** abiquo_stylesheets ***************************
+
+Collection of stylesheets and macros for formatting
+Confluence PDF output
+
+TODO!
+
+***************************************************

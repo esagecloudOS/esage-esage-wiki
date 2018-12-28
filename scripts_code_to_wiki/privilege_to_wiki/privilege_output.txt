@@ -1,0 +1,71 @@
+h4. Home Privileges 
+ || GUI Label   {color:#efefef}______________________{color} || Application Tag \\  {color:#efefef}_______________________________________________{color}  || Privilege  {color:#efefef}__________________________________________{color}|| Cloud Admin || Ent Admin || Ent User ||
+| List all enterprises | ENTERPRISE_ENUMERATE | This privilege allows a user to view the list of enterprises and to view statistics for those enterprises | X |  |  |
+| Administer all enterprises | ENTERPRISE_ADMINISTER_ALL | This privilege allows a user to change to another enterprise, in order to administer it, by clicking the Impersonate icon in the Enterprises list | X |  |  |
+| Display enterprise statistics | ENTERPRISE_RESOURCE_SUMMARY_ENT | This privilege allows a user to filter statistics by enterprise in the enterprise resources panel | X | X |  |
+h4. Infrastructure Privileges 
+ || GUI Label   {color:#efefef}______________________{color} || Application Tag \\  {color:#efefef}_______________________________________________{color}  || Privilege  {color:#efefef}__________________________________________{color}|| Cloud Admin || Ent Admin || Ent User ||
+| Access Infrastructure view | PHYS_DC_ENUMERATE | This privilege allows a user to access the Infrastructure view and list the physical datacenters | X |  |  |
+| Display resource usage panel | PHYS_DC_RETRIEVE_RESOURCE_USAGE | This privilege allows a user to view the resource usage panel in the Infrastructure view | X |  |  |
+| Manage datacenter | PHYS_DC_MANAGE | This privilege allows a user to manage datacenters (add, edit and delete). Without it, the datacenter's properties will be read only | X |  |  |
+| View datacenter details | PHYS_DC_RETRIEVE_DETAILS | This privilege allows a user to go inside a datacenter and view its details (racks, physical machines, VLANs, storage and allocation rules) | X |  |  |
+| Manage infrastructure elements | PHYS_DC_ALLOW_MODIFY_SERVERS | This privilege allows a user to manage infrastructure elements (add, edit and delete racks and physical machines) | X |  |  |
+| Manage network elements | PHYS_DC_ALLOW_MODIFY_NETWORK | This privilege allows a user to manage network elements (add, edit and delete public VLANs) | X |  |  |
+| Manage storage elements | PHYS_DC_ALLOW_MODIFY_STORAGE | This privilege allows a user to manage storage elements (add, edit and delete storage devices, pools, tiers and volumes) | X |  |  |
+| Manage allocation rules | PHYS_DC_ALLOW_MODIFY_ALLOCATION | This privilege allows a user to manage allocation rules (add and delete rules) | X |  |  |
+h4. Virtual Datacenters Privileges 
+ || GUI Label   {color:#efefef}______________________{color} || Application Tag \\  {color:#efefef}_______________________________________________{color}  || Privilege  {color:#efefef}__________________________________________{color}|| Cloud Admin || Ent Admin || Ent User ||
+| Access Virtual Datacenters view | VDC_ENUMERATE | This privilege allows a user to access the Virtual Datacenters view | X | X | X |
+| Manage virtual datacenters | VDC_MANAGE | This privilege allows a user to manage Virtual Datacenters (add, edit and delete). Without it, the Virtual Datacenters' details are read only | X | X |  |
+| Manage virtual appliances | VDC_MANAGE_VAPP | This privilege allows a user to manage virtual appliances (add, edit and delete) | X | X | X |
+| Manage virtual network elements | VDC_MANAGE_NETWORK | This privilege allows a user to manage private and public VLANS (add, edit and delete) | X | X |  |
+| Manage virtual storage elements | VDC_MANAGE_STORAGE | This privilege allows a user to manage storage volumes (add, edit and delete) | X | X |  |
+h4. Virtual Appliances Privileges 
+ || GUI Label   {color:#efefef}______________________{color} || Application Tag \\  {color:#efefef}_______________________________________________{color}  || Privilege  {color:#efefef}__________________________________________{color}|| Cloud Admin || Ent Admin || Ent User ||
+| Edit virtual appliance details | VAPP_CUSTOMISE_SETTINGS | This privilege allows a user to edit virtual appliance details (name, CPUs, etc.), go inside virtual appliances and view their details | X | X | X |
+| Deploy and undeploy virtual appliances | VAPP_DEPLOY_UNDEPLOY | This privilege allows a user to deploy/undeploy virtual appliances | X | X | X |
+| Assign network to virtual appliance | VAPP_ASSIGN_NETWORK | This privilege allows a user to access the virtual machine network tab, manage network interfaces (add and delete) and change the default gateway | X | X | X |
+| Assign volumes to virtual machine | VAPP_ASSIGN_VOLUME | This privilege allows a user to attach storage volumes to virtual machines | X | X | X |
+| Manage virtual machine hard disks | MANAGE_HARD_DISKS | This privilege allows a user to access the virtual machine hard disk tab and manage hard disks (add and delete) | X |  |  |
+| Perform virtual machine actions | VAPP_PERFORM_ACTIONS | This privilege allows a user to perform virtual machine actions (power on/off, pause, reboot, remote access) | X | X | X |
+| Create persistent template  | VAPP_CREATE_STATEFUL | This privilege allows a user to create persistent templates of a virtual machine within a virtual appliance | X | X | X |
+| Create instance | VAPP_CREATE_INSTANCE | This privilege allows a user to create instance templates of a virtual machine within a virtual appliance | X | X | X |
+h4. Apps Library Privileges 
+ || GUI Label   {color:#efefef}______________________{color} || Application Tag \\  {color:#efefef}_______________________________________________{color}  || Privilege  {color:#efefef}__________________________________________{color}|| Cloud Admin || Ent Admin || Ent User ||
+| Access Appliance Library view | APPLIB_VIEW | This privilege allows a user to access the Appliance Library view | X | X |  |
+| Manage VM templates from Appliance Library | APPLIB_ALLOW_MODIFY | This privilege allows a user to modify virtual machine templates (edit and delete) and view the Appliance Library contents | X | X |  |
+| Add a cost code when editing a VM template | APPLIB_VM_COST_CODE | This privilege allows a user to select a cost code when editing a virtual machine template | X |  |  |
+| Upload virtual machine template | APPLIB_UPLOAD_IMAGE | This privilege allows a user to upload virtual machine templates from a local file into the Appliance Library | X | X |  |
+| Manage repository | APPLIB_MANAGE_REPOSITORY | This privilege allows a user to manage repositories (add and delete repositories) | X | X |  |
+| Download virtual machine template | APPLIB_DOWNLOAD_IMAGE | This privilege allows a user to download virtual machine templates from the Appliance Library to their hard disk  | X | X |  |
+| Manage VM template categories | APPLIB_MANAGE_CATEGORIES | This privilege allows a user to manage the categories of virtual machine templates (add and delete) | X | X |  |
+| Manage VM template global categories | APPLIB_MANAGE_GLOBAL_CATEGORIES | This privilege allows a user to manage the categories of virtual machine templates that are common and available to all enterprises, rather than being constrained to a single enterprise.  _Global categories are also called system categories._| X |  |  |
+h4. Users Privileges 
+ || GUI Label   {color:#efefef}______________________{color} || Application Tag \\  {color:#efefef}_______________________________________________{color}  || Privilege  {color:#efefef}__________________________________________{color}|| Cloud Admin || Ent Admin || Ent User ||
+| Access Users view | USERS_VIEW | This privilege allows a user to access the Users view | X | X |  |
+| Manage enterprises | USERS_MANAGE_ENTERPRISE | This privilege allows a user to manage enterprises (add, edit and delete) | X |  |  |
+| Modify enterprise theme | USERS_MANAGE_ENTERPRISE_BRANDING | This privilege allows a user to manage enterprise branding (select a specific theme for an enterprise)  *This privilege is only visible after branding is enabled. By default it is not assigned to a role.* |  |  |  |
+| Manage users | USERS_MANAGE_USERS | This privilege allows a user to manage users (add, edit and delete) | X | X |  |
+| Manage users of all enterprises | USERS_MANAGE_OTHER_ENTERPRISES | This privilege allows a user to manage users of more than one enterprise and move users between enterprises. Without it, the Enterprise list is not shown in Users view | X |  |  |
+| Manage Chef enterprises | USERS_MANAGE_CHEF_ENTERPRISE | This privilege allows a user to enable and manage Chef for enterprises | X |  |  |
+| No VDC restriction | USERS_PROHIBIT_VDC_RESTRICTION | Normally a user within an enterprise can have a list of VDCs assigned and these will be the only VDCs that they will be able to see. Setting this privilege exempts a user from having their VDC list restricted and they will be able to see all VDCs in their enterprise | X | X |  |
+| Access Roles screen | USERS_VIEW_PRIVILEGES | This privilege allows a user to access the Roles screen | X |  |  |
+| Manage roles | USERS_MANAGE_ROLES | This privilege allows a user to manage roles (add, edit and delete roles; modify privileges assigned to roles) | X |  |  |
+| Associate role with enterprise | USERS_MANAGE_ROLES_OTHER_ENTERPRISES | This privilege allows a user to associate a role with any enterprise | X |  |  |
+| Manage global role | USERS_MANAGE_SYSTEM_ROLES | This privilege allows a user to manage roles that are common and available to all enterprises, rather than being constrained to a single enterprise.  _Global roles are also called system roles._| X |  |  |
+| Specify LDAP group | USERS_MANAGE_LDAP_GROUP | This privilege allows a user to associate a role with an LDAP group. When LDAP authentication is activated, a user's role will be determined by the LDAP group that they are a member of | X |  |  |
+| Display connected users | USERS_ENUMERATE_CONNECTED | This privilege allows a user to display connected users | X |  |  |
+| Define enterprise manager  | USERS_DEFINE_AS_MANAGER | This privilege defines a user as an enterprise manager. Enterprise managers receive physical machine notification emails | X | X |  |
+h4. System Configuration Privileges 
+ || GUI Label   {color:#efefef}______________________{color} || Application Tag \\  {color:#efefef}_______________________________________________{color}  || Privilege  {color:#efefef}__________________________________________{color}|| Cloud Admin || Ent Admin || Ent User ||
+| Access Configuration view | SYSCONFIG_VIEW | This privilege allows a user to access the Configuration view | X |  |  |
+| Modify configuration data | SYSCONFIG_ALLOW_MODIFY | This privilege allows a user to edit all system-wide configuration settings | X |  |  |
+| Allow access to reports | SYSCONFIG_SHOW_REPORTS | This privilege allows a user to access external reports by clicking the Reports icon. The icon will only be visible if the "Reports URL" system property is not empty (Configuration -> System Properties -> General -> Reports URL) | X |  |  |
+h4. Events Privileges 
+ || GUI Label   {color:#efefef}______________________{color} || Application Tag \\  {color:#efefef}_______________________________________________{color}  || Privilege  {color:#efefef}__________________________________________{color}|| Cloud Admin || Ent Admin || Ent User ||
+| Display all events for current enterprise | EVENTLOG_VIEW_ENTERPRISE | This privilege allows a user to display all events related to the current enterprise | X | X | X |
+| Display all events | EVENTLOG_VIEW_ALL | This privilege allows a user to display all events | X |  |  |
+h4. Pricing Privileges 
+ || GUI Label   {color:#efefef}______________________{color} || Application Tag \\  {color:#efefef}_______________________________________________{color}  || Privilege  {color:#efefef}__________________________________________{color}|| Cloud Admin || Ent Admin || Ent User ||
+| Access Pricing view | PRICING_VIEW | This privilege allows a user to access the Pricing view | X |  |  |
+| Manage pricing | PRICING_MANAGE | This privilege allows a user to manage pricing components (add, edit and delete currencies, pricing models and cost codes) | X |  |  |

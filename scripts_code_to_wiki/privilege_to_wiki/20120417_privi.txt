@@ -1,0 +1,222 @@
+LABEL_ALL=ALL
+
+LABEL_HOME=Home
+ENTERPRISE_ENUMERATE=List all enterprises
+ENTERPRISE_ENUMERATE_DESC=This privilege allows a user to view the list of enterprises and to view statistics for those enterprises
+ENTERPRISE_ADMINISTER_ALL=Administer all enterprises
+ENTERPRISE_ADMINISTER_ALL_DESC=This privilege allows a user to change to another enterprise, in order to administer it, by clicking the Impersonate icon in the Enterprises list
+ENTERPRISE_RESOURCE_SUMMARY_ENT=Display enterprise statistics
+ENTERPRISE_RESOURCE_SUMMARY_ENT_DESC=This privilege allows a user to filter statistics by enterprise in the enterprise resources panel
+
+LABEL_INFRASTRUCTURE=Infrastructure
+PHYS_DC_ENUMERATE=Access Infrastructure view
+PHYS_DC_ENUMERATE_DESC=This privilege allows a user to access the Infrastructure view and list the physical datacenters
+PHYS_DC_RETRIEVE_RESOURCE_USAGE=Display resource usage panel
+PHYS_DC_RETRIEVE_RESOURCE_USAGE_DESC=This privilege allows a user to view the resource usage panel in the Infrastructure view
+PHYS_DC_MANAGE=Manage datacenter
+PHYS_DC_MANAGE_DESC=This privilege allows a user to manage datacenters (add, edit and delete). Without it, the datacenter's properties will be read only
+PHYS_DC_RETRIEVE_DETAILS=View datacenter details
+PHYS_DC_RETRIEVE_DETAILS_DESC=This privilege allows a user to go inside a datacenter and view its details (racks, physical machines, VLANs, storage and allocation rules)
+PHYS_DC_ALLOW_MODIFY_SERVERS=Manage infrastructure elements
+PHYS_DC_ALLOW_MODIFY_SERVERS_DESC=This privilege allows a user to manage infrastructure elements (add, edit and delete racks and physical machines)
+PHYS_DC_ALLOW_MODIFY_NETWORK=Manage network elements
+PHYS_DC_ALLOW_MODIFY_NETWORK_DESC=This privilege allows a user to manage network elements (add, edit and delete public VLANs)
+PHYS_DC_ALLOW_MODIFY_STORAGE=Manage storage elements
+PHYS_DC_ALLOW_MODIFY_STORAGE_DESC=This privilege allows a user to manage storage elements (add, edit and delete storage devices, pools, tiers and volumes)
+PHYS_DC_ALLOW_MODIFY_ALLOCATION=Manage allocation rules
+PHYS_DC_ALLOW_MODIFY_ALLOCATION_DESC=This privilege allows a user to manage allocation rules (add and delete rules)
+
+LABEL_VIRTUAL_DATACENTER=Virtual Datacenters
+VDC_ENUMERATE=Access Virtual Datacenters view
+VDC_ENUMERATE_DESC=This privilege allows a user to access the Virtual Datacenters view
+VDC_MANAGE=Manage virtual datacenters
+VDC_MANAGE_DESC=This privilege allows a user to manage Virtual Datacenters (add, edit and delete). Without it, the Virtual Datacenters' details are read only
+VDC_MANAGE_VAPP=Manage virtual appliances
+VDC_MANAGE_VAPP_DESC=This privilege allows a user to manage virtual appliances (add, edit and delete)
+VDC_MANAGE_NETWORK=Manage virtual network elements
+VDC_MANAGE_NETWORK_DESC=This privilege allows a user to manage private and public VLANS (add, edit and delete)
+VDC_MANAGE_STORAGE=Manage virtual storage elements
+VDC_MANAGE_STORAGE_DESC=This privilege allows a user to manage storage volumes (add, edit and delete)
+
+LABEL_VIRTUAL_APPLIANCE=Virtual Appliances
+VAPP_CUSTOMISE_SETTINGS=Edit virtual appliance details
+VAPP_CUSTOMISE_SETTINGS_DESC=This privilege allows a user to edit virtual appliance details (name, CPUs, etc.), go inside virtual appliances and view their details
+VAPP_DEPLOY_UNDEPLOY=Deploy and undeploy virtual appliances
+VAPP_DEPLOY_UNDEPLOY_DESC=This privilege allows a user to deploy/undeploy virtual appliances
+VAPP_ASSIGN_NETWORK=Assign network to virtual appliance
+VAPP_ASSIGN_NETWORK_DESC=This privilege allows a user to access the virtual machine network tab, manage network interfaces (add and delete) and change the default gateway
+VAPP_ASSIGN_VOLUME=Assign volumes to virtual machine
+VAPP_ASSIGN_VOLUME_DESC=This privilege allows a user to attach storage volumes to virtual machines
+MANAGE_HARD_DISKS=Manage virtual machine hard disks
+MANAGE_HARD_DISKS_DESC=This privilege allows a user to access the virtual machine hard disk tab and manage hard disks (add and delete)
+VAPP_PERFORM_ACTIONS=Perform virtual machine actions
+VAPP_PERFORM_ACTIONS_DESC=This privilege allows a user to perform virtual machine actions (power on/off, pause, reboot, remote access)
+VAPP_CREATE_STATEFUL=Create persistent template 
+VAPP_CREATE_STATEFUL_DESC=This privilege allows a user to create persistent templates of a virtual machine within a virtual appliance
+VAPP_CREATE_INSTANCE=Create instance
+VAPP_CREATE_INSTANCE_DESC=This privilege allows a user to create instance templates of a virtual machine within a virtual appliance
+
+LABEL_APPS=Apps Library
+APPLIB_VIEW=Access Appliance Library view
+APPLIB_VIEW_DESC=This privilege allows a user to access the Appliance Library view
+APPLIB_ALLOW_MODIFY=Manage VM templates from Appliance Library
+APPLIB_ALLOW_MODIFY_DESC=This privilege allows a user to modify virtual machine templates (edit and delete) and view the Appliance Library contents
+APPLIB_VM_COST_CODE=Add a cost code when editing a VM template
+APPLIB_VM_COST_CODE_DESC=This privilege allows a user to select a cost code when editing a virtual machine template
+APPLIB_UPLOAD_IMAGE=Upload virtual machine template
+APPLIB_UPLOAD_IMAGE_DESC=This privilege allows a user to upload virtual machine templates from a local file into the Appliance Library
+APPLIB_MANAGE_REPOSITORY=Manage repository
+APPLIB_MANAGE_REPOSITORY_DESC=This privilege allows a user to manage repositories (add and delete repositories)
+APPLIB_DOWNLOAD_IMAGE=Download virtual machine template
+APPLIB_DOWNLOAD_IMAGE_DESC=This privilege allows a user to download virtual machine templates from the Appliance Library to their hard disk 
+APPLIB_MANAGE_CATEGORIES=Manage VM template categories
+APPLIB_MANAGE_CATEGORIES_DESC=This privilege allows a user to manage the categories of virtual machine templates (add and delete)
+APPLIB_MANAGE_GLOBAL_CATEGORIES=Manage VM template global categories
+APPLIB_MANAGE_GLOBAL_CATEGORIES_DESC=This privilege allows a user to manage the categories of virtual machine templates that are common and available to all enterprises, rather than being constrained to a single enterprise.
+
+LABEL_USER=Users
+USERS_VIEW=Access Users view
+USERS_VIEW_DESC=This privilege allows a user to access the Users view
+USERS_MANAGE_ENTERPRISE=Manage enterprises
+USERS_MANAGE_ENTERPRISE_DESC=This privilege allows a user to manage enterprises (add, edit and delete)
+USERS_MANAGE_ENTERPRISE_BRANDING=Modify enterprise theme
+USERS_MANAGE_ENTERPRISE_BRANDING_DESC=This privilege allows a user to manage enterprise branding (select a specific theme for an enterprise)
+USERS_MANAGE_USERS=Manage users
+USERS_MANAGE_USERS_DESC=This privilege allows a user to manage users (add, edit and delete)
+USERS_MANAGE_OTHER_ENTERPRISES=Manage users of all enterprises
+USERS_MANAGE_OTHER_ENTERPRISES_DESC=This privilege allows a user to manage users of more than one enterprise and move users between enterprises. Without it, the Enterprise list is not shown in Users view
+USERS_MANAGE_CHEF_ENTERPRISE=Manage Chef enterprises
+USERS_MANAGE_CHEF_ENTERPRISE_DESC=This privilege allows a user to enable and manage Chef for enterprises
+USERS_PROHIBIT_VDC_RESTRICTION=No VDC restriction
+USERS_PROHIBIT_VDC_RESTRICTION_DESC=Normally a user within an enterprise can have a list of VDCs assigned and these will be the only VDCs that they will be able to see. Setting this privilege exempts a user from having their VDC list restricted and they will be able to see all VDCs in their enterprise
+USERS_VIEW_PRIVILEGES=Access Roles screen
+USERS_VIEW_PRIVILEGES_DESC=This privilege allows a user to access the Roles screen
+USERS_MANAGE_ROLES=Manage roles
+USERS_MANAGE_ROLES_DESC=This privilege allows a user to manage roles (add, edit and delete roles; modify privileges assigned to roles)
+USERS_MANAGE_ROLES_OTHER_ENTERPRISES=Associate role with enterprise
+USERS_MANAGE_ROLES_OTHER_ENTERPRISES_DESC=This privilege allows a user to associate a role with any enterprise
+USERS_MANAGE_SYSTEM_ROLES=Manage global role
+USERS_MANAGE_SYSTEM_ROLES_DESC=This privilege allows a user to manage roles that are common and available to all enterprises, rather than being constrained to a single enterprise.
+USERS_MANAGE_LDAP_GROUP=Specify LDAP group
+USERS_MANAGE_LDAP_GROUP_DESC=This privilege allows a user to associate a role with an LDAP group. When LDAP authentication is activated, a user's role will be determined by the LDAP group that they are a member of
+USERS_ENUMERATE_CONNECTED=Display connected users
+USERS_ENUMERATE_CONNECTED_DESC=This privilege allows a user to display connected users
+USERS_DEFINE_AS_MANAGER=Define enterprise manager 
+USERS_DEFINE_AS_MANAGER_DESC=This privilege defines a user as an enterprise manager. Enterprise managers receive physical machine notification emails
+
+LABEL_SYSTEM=System Configuration
+SYSCONFIG_VIEW=Access Configuration view
+SYSCONFIG_VIEW_DESC=This privilege allows a user to access the Configuration view
+SYSCONFIG_ALLOW_MODIFY=Modify configuration data
+SYSCONFIG_ALLOW_MODIFY_DESC=This privilege allows a user to edit all system-wide configuration settings
+SYSCONFIG_SHOW_REPORTS=Allow access to reports
+SYSCONFIG_SHOW_REPORTS_DESC=This privilege allows a user to access external reports by clicking the Reports icon. The icon will only be visible if the "Reports URL" system property is not empty (Configuration -> System Properties -> General -> Reports URL)
+
+LABEL_EVENT=Events
+EVENTLOG_VIEW_ENTERPRISE=Display all events for current enterprise
+EVENTLOG_VIEW_ENTERPRISE_DESC=This privilege allows a user to display all events related to the current enterprise
+EVENTLOG_VIEW_ALL=Display all events
+EVENTLOG_VIEW_ALL_DESC=This privilege allows a user to display all events
+
+LABEL_MORE_INFO=Roll over a privilege to display its description
+LABEL_ADDED=added
+LABEL_DELETED=deleted
+LABEL_FOR_ROLE=for role
+
+BUTTON_DISCARD=Discard changes
+
+LABEL_PRICING=Pricing
+PRICING_VIEW=Access Pricing view
+PRICING_VIEW_DESC=This privilege allows a user to access the Pricing view
+PRICING_MANAGE=Manage pricing
+PRICING_MANAGE_DESC=This privilege allows a user to manage pricing components (add, edit and delete currencies, pricing models and cost codes)
+
+| ENTERPRISE_ENUMERATE                 | CLOUD_ADMIN      | 
+| ENTERPRISE_ADMINISTER_ALL            | CLOUD_ADMIN      | 
+| ENTERPRISE_RESOURCE_SUMMARY_ENT      | CLOUD_ADMIN      | 
+| PHYS_DC_ENUMERATE                    | CLOUD_ADMIN      | 
+| PHYS_DC_RETRIEVE_RESOURCE_USAGE      | CLOUD_ADMIN      | 
+| PHYS_DC_MANAGE                       | CLOUD_ADMIN      | 
+| PHYS_DC_RETRIEVE_DETAILS             | CLOUD_ADMIN      | 
+| PHYS_DC_ALLOW_MODIFY_SERVERS         | CLOUD_ADMIN      | 
+| PHYS_DC_ALLOW_MODIFY_NETWORK         | CLOUD_ADMIN      | 
+| PHYS_DC_ALLOW_MODIFY_STORAGE         | CLOUD_ADMIN      | 
+| PHYS_DC_ALLOW_MODIFY_ALLOCATION      | CLOUD_ADMIN      | 
+| VDC_ENUMERATE                        | CLOUD_ADMIN      | 
+| VDC_MANAGE                           | CLOUD_ADMIN      | 
+| VDC_MANAGE_VAPP                      | CLOUD_ADMIN      | 
+| VDC_MANAGE_NETWORK                   | CLOUD_ADMIN      | 
+| VDC_MANAGE_STORAGE                   | CLOUD_ADMIN      | 
+| VAPP_CUSTOMISE_SETTINGS              | CLOUD_ADMIN      | 
+| VAPP_DEPLOY_UNDEPLOY                 | CLOUD_ADMIN      | 
+| VAPP_ASSIGN_NETWORK                  | CLOUD_ADMIN      | 
+| VAPP_ASSIGN_VOLUME                   | CLOUD_ADMIN      | 
+| VAPP_PERFORM_ACTIONS                 | CLOUD_ADMIN      | 
+| VAPP_CREATE_STATEFUL                 | CLOUD_ADMIN      | 
+| VAPP_CREATE_INSTANCE                 | CLOUD_ADMIN      | 
+| APPLIB_VIEW                          | CLOUD_ADMIN      | 
+| APPLIB_ALLOW_MODIFY                  | CLOUD_ADMIN      | 
+| APPLIB_UPLOAD_IMAGE                  | CLOUD_ADMIN      | 
+| APPLIB_MANAGE_REPOSITORY             | CLOUD_ADMIN      | 
+| APPLIB_DOWNLOAD_IMAGE                | CLOUD_ADMIN      | 
+| APPLIB_MANAGE_CATEGORIES             | CLOUD_ADMIN      | 
+| USERS_VIEW                           | CLOUD_ADMIN      | 
+| USERS_MANAGE_ENTERPRISE              | CLOUD_ADMIN      | 
+| USERS_MANAGE_USERS                   | CLOUD_ADMIN      | 
+| USERS_MANAGE_OTHER_ENTERPRISES       | CLOUD_ADMIN      | 
+| USERS_PROHIBIT_VDC_RESTRICTION       | CLOUD_ADMIN      | 
+| USERS_VIEW_PRIVILEGES                | CLOUD_ADMIN      | 
+| USERS_MANAGE_ROLES                   | CLOUD_ADMIN      | 
+| USERS_MANAGE_ROLES_OTHER_ENTERPRISES | CLOUD_ADMIN      | 
+| USERS_MANAGE_SYSTEM_ROLES            | CLOUD_ADMIN      | 
+| USERS_MANAGE_LDAP_GROUP              | CLOUD_ADMIN      | 
+| USERS_ENUMERATE_CONNECTED            | CLOUD_ADMIN      | 
+| SYSCONFIG_VIEW                       | CLOUD_ADMIN      | 
+| SYSCONFIG_ALLOW_MODIFY               | CLOUD_ADMIN      | 
+| EVENTLOG_VIEW_ENTERPRISE             | CLOUD_ADMIN      | 
+| EVENTLOG_VIEW_ALL                    | CLOUD_ADMIN      | 
+| APPLIB_VM_COST_CODE                  | CLOUD_ADMIN      | 
+| SYSCONFIG_SHOW_REPORTS               | CLOUD_ADMIN      | 
+| USERS_DEFINE_AS_MANAGER              | CLOUD_ADMIN      | 
+| PRICING_VIEW                         | CLOUD_ADMIN      | 
+| PRICING_MANAGE                       | CLOUD_ADMIN      | 
+| USERS_MANAGE_CHEF_ENTERPRISE         | CLOUD_ADMIN      | 
+| MANAGE_HARD_DISKS                    | CLOUD_ADMIN      | 
+| APPLIB_MANAGE_GLOBAL_CATEGORIES      | CLOUD_ADMIN      | 
+| VDC_ENUMERATE                        | USER             | 
+| VDC_MANAGE_VAPP                      | USER             | 
+| VAPP_CUSTOMISE_SETTINGS              | USER             | 
+| VAPP_DEPLOY_UNDEPLOY                 | USER             | 
+| VAPP_ASSIGN_NETWORK                  | USER             | 
+| VAPP_ASSIGN_VOLUME                   | USER             | 
+| VAPP_PERFORM_ACTIONS                 | USER             | 
+| VAPP_CREATE_STATEFUL                 | USER             | 
+| VAPP_CREATE_INSTANCE                 | USER             | 
+| EVENTLOG_VIEW_ENTERPRISE             | USER             | 
+| ENTERPRISE_RESOURCE_SUMMARY_ENT      | ENTERPRISE_ADMIN | 
+| VDC_ENUMERATE                        | ENTERPRISE_ADMIN | 
+| VDC_MANAGE                           | ENTERPRISE_ADMIN | 
+| VDC_MANAGE_VAPP                      | ENTERPRISE_ADMIN | 
+| VDC_MANAGE_NETWORK                   | ENTERPRISE_ADMIN | 
+| VDC_MANAGE_STORAGE                   | ENTERPRISE_ADMIN | 
+| VAPP_CUSTOMISE_SETTINGS              | ENTERPRISE_ADMIN | 
+| VAPP_DEPLOY_UNDEPLOY                 | ENTERPRISE_ADMIN | 
+| VAPP_ASSIGN_NETWORK                  | ENTERPRISE_ADMIN | 
+| VAPP_ASSIGN_VOLUME                   | ENTERPRISE_ADMIN | 
+| VAPP_PERFORM_ACTIONS                 | ENTERPRISE_ADMIN | 
+| VAPP_CREATE_STATEFUL                 | ENTERPRISE_ADMIN | 
+| VAPP_CREATE_INSTANCE                 | ENTERPRISE_ADMIN | 
+| APPLIB_VIEW                          | ENTERPRISE_ADMIN | 
+| APPLIB_ALLOW_MODIFY                  | ENTERPRISE_ADMIN | 
+| APPLIB_UPLOAD_IMAGE                  | ENTERPRISE_ADMIN | 
+| APPLIB_MANAGE_REPOSITORY             | ENTERPRISE_ADMIN | 
+| APPLIB_DOWNLOAD_IMAGE                | ENTERPRISE_ADMIN | 
+| APPLIB_MANAGE_CATEGORIES             | ENTERPRISE_ADMIN | 
+| USERS_VIEW                           | ENTERPRISE_ADMIN | 
+| USERS_MANAGE_USERS                   | ENTERPRISE_ADMIN | 
+| USERS_PROHIBIT_VDC_RESTRICTION       | ENTERPRISE_ADMIN | 
+| EVENTLOG_VIEW_ENTERPRISE             | ENTERPRISE_ADMIN | 
+| USERS_DEFINE_AS_MANAGER              | ENTERPRISE_ADMIN | 
+EXTRA_TEXT | USERS_MANAGE_ENTERPRISE_BRANDING | *This privilege is only visible after branding is enabled. By default it is not assigned to a role.* 
+EXTRA_TEXT | USERS_MANAGE_SYSTEM_ROLES | _Global roles are also called system roles._
+EXTRA_TEXT | APPLIB_MANAGE_GLOBAL_CATEGORIES | _Global categories are also called system categories._

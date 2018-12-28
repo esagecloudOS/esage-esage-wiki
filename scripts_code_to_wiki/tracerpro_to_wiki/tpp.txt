@@ -1,0 +1,268 @@
+h5. Infrastructure
+
+h6.   Physical Machine
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| machine.reenableha.vsmsubscribeerror  |  VSM could not subscribe to ''0'' events after HA Reenable ''1'' |
+
+h6.   Persistent
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| stateful.addinitiator.failed  |  Unable to create the initiator mapping for initiator ''0'' and volume ''1'' in virtual appliance ''2''. |
+| stateful.addinitiator.finished  |  Added initiator to the target Storage Technology ''0'' for virtual appliance ''1''. |
+| stateful.createdisk.error  |  Unable to create volume dump conversion for the virtual machine template ''0'' in virtual appliance ''1''. |
+| stateful.createvolenqueuedump.failed.admin  |  Volume creation and enqueue dump process failed for virtual machine template ''0''. |
+| stateful.createvolenqueuedump.failed.user  |  Persistent process failed for virtual machine template ''0''. |
+| stateful.createvolume.failed.admin  |  Unable to create a volume for the persistent virtual machine template ''0'' in virtual appliance ''1'' from virtual datacenter ''2'' in persistent template started by ''3'' from ''4''. |
+| stateful.createvolume.failed.user  |  The request for persistent template ''0'' cannot be fulfilled due to a problem with the infrastructure. Try in a few minutes and if the problem persists please contact your provider. |
+| stateful.createvolume.finished  |  Persistent volume created successfully for virtual machine template ''0'' in virtual appliance ''1''. |
+| stateful.deletevolumen.failed  |  Failed to delete the persistent volume of virtual appliance ''0'' after a volume dump failure. |
+| stateful.enqueuedump.ok  |  Persistent volume dump enqueued for persistent virtual machine template ''0'' in virtual appliance ''1''. |
+| stateful.enqueuedump.error  |  Unable to enqueue persistent volume dump for the persistent virtual machine template ''0'' in virtual appliance ''1''. |
+| stateful.generic.failed.user  |  Persistent process failed for virtual appliance ''0''. |
+| stateful.initiatorIQN.failed.admin  |  Could not get the initiator of the BPM machine. |
+| stateful.persistentprocess.failed  |  Failed to associate the volume with the virtual machine to create the persistent virtual machine template ''0'' in virtual appliance ''1''. |
+| stateful.persistentprocess.failed.reconfigure  |  Failed to reconfigure the virtual machine ''0'' in virtual appliance ''1'' after volume dump. |
+| stateful.persistentprocess.failed.templatecreation  |  Failed to create the persistent machine template ''0'' in virtual appliance ''1''. |
+| stateful.persistentprocess.finished  |  Persistent process finished for virtual machine template ''0'' in virtual appliance ''1''. |
+| stateful.rawconversion.failed.admin  |  Unable to convert virtual machine template ''0'' in virtual appliance ''1'' to RAW format to create a persistent disk. |
+| stateful.rawconversion.failed.user  |  Persistent process failed for virtual machine template ''0'' in virtual appliance ''1''. |
+| stateful.rawconversion.finished.admin  |  Raw conversion finished successfully for virtual machine template ''0'' in virtual appliance ''1''. |
+| stateful.volumedump.failed.admin  |  Volume dump failed for persistent virtual machine template ''0'' in virtual appliance ''1''. |
+| stateful.volumedump.failed.user  |  Volume dump failed for persistent virtual machine template ''0'' in virtual appliance ''1''. |
+| stateful.volumedump.finished  |  Volume dump successfully completed for persistent virtual machine template ''0'' in virtual appliance ''1''.  |
+| stateful.volumesize.ok  |  Using the selected volume ''0'' to hold the persistent virtual machine template. |
+| stateful.volumesize.error  |  The selected volume is not large enough to hold the persistent virtual machine template. |
+
+h6.   Instance
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| instance.baseformat.failed.admin  |  Failed to convert template to base format ''0'' for virtual machine ''1''. |
+| instance.baseformat.failed.user  |  Failed to make instance from template ''0'' for virtual machine ''1''. |
+| instance.conversion.failed  |  Failed to enqueue conversions from template ''0'' for virtual machine ''1''. |
+| instance.poweron.failed.admin  |  Failed to power on virtual machine ''0''. |
+| instance.poweron.failed.user  |  Failed to power on virtual machine ''0'' after instance process. |
+| instance.rawtobaseformat.failed.admin  |  Failed while converting virtual machine template ''0'' from raw to base format (the platform's hypervisor default), started by user ''1''. |
+| instance.rawtobaseformat.failed.user  |  Instance from persistent virtual machine template ''0'' failed. |
+| instance.statefultoraw.failed.admin  |  Unable to dump the persistent virtual machine ''0'' in virtual appliance ''1''. |
+| instance.statefultoraw.failed.user  |  Instance from persistent virtual machine template ''0'' failed in virtual appliance ''1''. |
+
+h6.   Conversions
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| conversion.updatestatus.failed.admin  |  Failed while converting the virtual machine template ''0'' from disk format ''1'' to ''2'' started by user ''3''. |
+| conversion.updatestatus.failed.user  |  Failed while converting the virtual machine template ''0'' from disk format ''1'' to ''2''. |
+| conversion.updatestatus.finished.admin  |  Conversion from disk format ''0'' to ''1'' finished succesfully for template ''2'' started by user ''3''. |
+| conversion.updatestatus.finished.user  |  Conversion from disk format ''0'' to ''1'' finished succesfully for template ''2''. |
+
+h6.   Remote Service Check
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| task.remoteservice.check.error  |  An error occurred while checking remote service ''0'' of datacenter ''1''. |
+| task.remoteservice.retrieve.error  |  An error occurred while retrieving remote services. |
+
+h6.   Virtual Factory
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| tarantino.vmundeployed.user  |  The virtual machine was undeployed successfully in the virtual factory. |
+| tarantino.vmundeployed.admin  |  The virtual machine with ID ''0'' and owner ''1'' was undeployed successfully in the virtual factory. Finished the task created at ''2''. |
+| tarantino.vmundeployed.failed.user  |  The virtual machine undeploy failed in the virtual factory. |
+| tarantino.vmundeployed.failed.admin  |  Undeploy of the virtual machine with ID ''0'' and owner ''1'' failed in the virtual factory. Finished the task created at ''2''. |
+
+h6.   BPM and Callbacks
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| bpm.failed.user  |  Persistent process failed. |
+| bpm.failed.admin  |  Unable to connect to BPM. |
+| bpm.callback.failed.default.user  |  Process failed, please contact your administrator. |
+| bpm.callback.failed.notfoundex.admin  |  Tried to obtain a nonexistent conversion (assuming that message is dirty)- Rabbit message:- ''0''. |
+| bpm.callback.failed.nullpointerex.admin  |  Exception probably caused by dirty rabbit queues (out of sync with database)- Rabbit message:- ''0''. |
+| bpm.callback.failed.unexpectedex.admin  |  Unexpected exception- Rabbit message:- ''0''. |
+
+h6.   Event Processor
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| eventprocessor.move  |  Processed MOVE event on virtual machine ''0'' to datastore ''1'' on hypervisor ''2''. The current machine state is ''4''. |
+
+h6.   HA Worker
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| haworker.machinedisabled  |  Machine ''0'' on rack ''1'' has been disabled by the HA engine. |
+| haworker.vmreallocated  |  Virtual machine ''0'' has been reallocated by the HA engine. |
+| haworker.vmnotreallocated  |  Virtual machine ''0'' has not been reallocated by the HA engine. |
+
+h6.   AM Event Processor
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| am.vmtemplatediferent.error  |  The virtual machine template was found in a different datacenter than expected (''0'' not ''1''). The conversion will be skipped. |
+| am.sendconversion.error  |  Could not send the conversion for (''0'' to ''1'') to the BPM. Check connection and configuration. The conversion will be skipped. |
+
+
+h6.   Virtual Machine Templates
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| vimage.diskunknown  |  The disk format is unknown. The virtual machine template ''0'' will not be converted. |
+| vimage.sameformats.error  |  The virtual machine template source format and target format are the same (''0'',''1'') The conversion will be skipped. |
+| vimage.converted  |  The virtual machine template ''0'' was already converted ''1''. |
+
+h6.   Virtual Appliance
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| virtualappliance.move.success | Virtual appliance ''0'' successfully moved from virtual datacenter ''1'' to virtual datacenter ''2'' with name ''3''. |
+| virtualappliance.copy.success | Virtual appliance ''0'' successfully copied from virtual datacenter ''1'' to virtual datacenter ''2'' with name ''3''. |
+| virtualappliance.move_copy.captured | Virtual appliance ''0'' cannot be moved or copied. Virtual appliance contains at least one captured virtual machine. |
+| virtualappliance.copy.persistent | Virtual appliance  ''0'' cannot be copied. Virtual appliance contains persistent virtual machines. |
+| virtualappliance.move_copy.incompatible | Virtual appliance ID ''0'' cannot be moved or copied. The ''1'' template of this virtual machine is not compatible with the target hypevisor (''2'') and no conversions are available. |
+| virtualappliance.move_copy.state | Virtual appliance ID ''0'', cannot be moved or copied. The expected state was NOT_DEPLOYED but the actual state is ''1''. |
+| virtualappliance.move_copy.dc | Virtual appliance ID ''0'' cannot be moved or copied; the virtual datacenters (origin ''2'' and target ''1'') must belong to the same datacenter. |
+
+h6.   Chef
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| chef.connection.failed.admin  |  Could not connect to the Chef server at ''0'' as ''1'' to perform the request. Please check that the client has the appropriate permissions to perform the task. |
+| chef.connection.failed.user  |  Could not connect to the Chef server. Please contact the administrator. |
+
+h6.   Cost Code
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| costcode.created  |  Created Cost Code ''0'' |
+| costcode.deleted  |  Deleted Cost Code ''0'' |
+| costcode.modified  |  Cost Code ''0'' has been modified (Name: ''1'') |
+
+h6.   Pricing Template
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| pricingtemplate.created  |  Created Pricing Template: ''0'' |
+| pricingtemplate.modified  |  Pricing Template ''0'' has been modified (Name: ''1'') |
+| pricingtemplate.deleted  |  Deleted Pricing Template ''0'' |
+| pricingtemplate.assigned  |  Pricing Template ''0'' has been associated with Enterprise ''1'' |
+
+h6.   Currency
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| currency.created  |  Created currency: ''0'' |
+| currency.removed  |  Currency ''0'' removed.  |
+| currency.modified  |  Currency ''0'' modified. |
+
+h6.   Rules
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| rules.applied  |  Allocation rules applied. |
+| rule.loadlevel.removed  |  Load Level rule removed. |
+| rule.loadbalance.removed  |  Load Balance rule removed. |
+| rule.restrictshared.removed  |  Restrict shared server allocation rule between the enterprises ''0'' and ''1'' removed. |
+
+
+h6.   Infrastructure Premium
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| infrastructure.license.error  |  Current license does not allow the platform to manage more than ''0'' cores. |
+| infrastructure.remotevm.created  |  Remote Virtual Machine with name ''0'' has been created. |
+| infrastructure.vms.discovered  |  The platform has discovered ''0'' virtual machines on physical machine ''1''. |
+
+h6.   Machine Service
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| machine.retrievevm.healthcheck  |  Could not retrieve the virtual infrastructure from machine ''0'' during the health check. ''1'' |
+
+h6.   Network
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| publicvlan.created  |  A new ''0'' VLAN with name ''1'' has been created in datacenter ''2'' |
+| publicvlan.modified  |  The public VLAN with name ''0'' in Datacenter ''1'' has been modified. |
+| publicvlan.deleted  |  The public VLAN with name ''0'' in datacenter ''1'' has been deleted. |
+| unmanagedvlan.modified  |  The unmanaged VLAN with name ''0'' in Datacenter ''1'' has been modified. |
+| unmanagedvlan.deleted  |  The unmanaged VLAN with name ''0'' in datacenter ''1'' has been deleted. |
+| externalvlan.modified  |  The external VLAN with name ''0'' in Datacenter ''1'' has been modified. |
+| externalvlan.deleted  |  The external VLAN with name ''0'' in datacenter ''1'' has been deleted. |
+| externalvlan.default  |  External VLAN with name ''0'' has been configured as the default in Enterprise ''1''. |
+| externalvlan.default.vdc  |  External VLAN with name ''0'' has been configured as the default in Virtual Datacenter ''1''. |
+| publicip.purched  |  Public IP ''0'' has been purchased by Virtual Datacenter ''1''. |
+| publicip.released  |  Public IP ''0'' has been released from Virtual Datacenter ''1''. |
+| privatevlan.default  |  A virtual datacenter auto-created private VLAN will be the default in Enterprise ''0''. |
+
+h6.   Role
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| role.created  |  Created role ''0'' |
+| role.modified  |  Role ''0'' of enterprise ''1'', has been modified (Name: ''2'', Enterprise: ''3'') |
+| role.deleted  |  Deleted role ''0'' |
+| role.enterprise.created  |  Created role ''0'' (Enterprise: ''1'') |
+| roleldap.created  |  Created LDAP role ''0'' |
+| roleldap.modified  |  LDAP Role ''0'' has been modified (LDAP: ''1'') |
+| role.modifiedprivileges  |  Modifying privileges of role ''0'', removed ''1'', added ''2'' |
+
+h6.   Storage
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| device.created  |  Storage device ''0'' has been created |
+| device.updated  |  Storage device ''0'' has been modified |
+| device.deleted  |  Storage device ''0'' has been deleted |
+| volume.created  |  Created volume ''0'' of size ''1'' MB |
+| volume.created.failed  |  Could not create volume ''0'' of size ''1'' MB |
+| volume.created.failed.user  |  Could not create volume ''0'' of size ''1'' MB |
+| volume.created.failed.admin  |  Could not create volume ''0'' of size ''1'' MB: ''2''  |
+| volume.updated  |  Volume ''0'' modified |
+| volume.updated.failed  |  Could not physically update volume ''0'' on the target storage device |
+| volume.updated.size  |  Updated size of volume ''0'' to ''1'' MB |
+| volume.deleted.failed.user  |  Volume ''0'' could not be deleted |
+| volume.deleted.failed.admin  |  Cannot delete the volume ''0'' because it is being converted to persistent |
+| volume.deleted  |  Deleting volume ''0'' |
+| volume.deleted.finish  |  Deleted volume ''0'' |
+| volume.deleted.finish.failed.admin  |  The volume ''0'' could not be physically deleted from the target storage device: ''1'' |
+| volume.deleted.failed2.user  |  Volume ''0'' could not be deleted |
+| volume.deleted.failed2.admin  |  Volume ''0'' could not be deleted: ''1'' |
+| volume.rollback.failed.admin  |  Could not roll back volume ''0'' on the target device ''1'' |
+| volume.attached  |  Volume ''0'' of ''1'' MB has been attached to Virtual Machine ''2'' |
+| volume.detached  |  Volume ''0'' of ''1'' MB has been detached from Virtual Machine ''2'' |
+| volume.moved  |  Volume ''0'' of ''1'' MB has been moved to Virtual Datacenter ''2'' |
+| stateful.deleted.failed  |  The persistent volume cannot be deleted because it is being used in a virtual appliance |
+| ssm.notexists.admin  |  The Storage Manager remote service does not exist |
+| ssm.down.admin  |  Could not connect to the Storage Manager; check storage configuration, connection and Storage Manager: ''0'' |
+
+h6.   Undeploy Handler
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| undeploy.handler.job.aborted.log  |  The virtual machine undeploy failed on the platform |
+| undeploy.handler.job.aborted.system  |  Undeploy of virtual machine ID ''0'' and owner ''1'' failed on the platform. Aborted the task created at ''2''. Successfully updated virtual machine state to UNKNOWN. |
+| undeploy.handler.job.aborted.error.system  |  Undeploy of virtual machine ID ''0'' and owner ''1'' failed on the platform. Aborted the task created at ''2''. Failed to set virtual machine state to UNKNOWN. |
+| undeploy.handler.job.connection.system  |  Undeploy of virtual machine ID ''0'' and owner ''1'' failed on the platform due to a communication problem with the hypervisor. Aborted the task created at ''2''. Successfully updated virtual machine state to UNKNOWN. The platform will perform a check on the physical machine. |
+
+h6.   Deploy Handler
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| deploy.handler.success  |  Deploy on virtual machine ''0'' completed |
+| deploy.handler.user.failed  |  Deploy on virtual machine ''0'' failed |
+| deploy.handler.system.failed  |  Deploy (task ID ''0'') on virtual machine ''1'' failed. The virtual machine is in state NOT_ALLOCATED |
+| deploy.handler.job.aborted.log  |  Virtual machine deploy failed on the platform |
+| deploy.handler.job.aborted.system  |  Deploy of virtual machine ID ''0'' and owner ''1'' failed on the platform. Aborted the task created at ''2''. Successfully updated the virtual machine state to UNKNOWN. |
+| deploy.handler.job.aborted.error.system  |  Deploy of virtual machine ID ''0'' and owner ''1'' failed on the platform. Aborted the task created at ''2''. Failed to set virtual machine state to UNKNOWN. |
+
+h6.   Tasks
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| task.failed.connection  |  VirtualFactory task on virtual machine ID ''0'' and owner ''1'' failed on the platform due to a communication problem with the hypervisor. Aborted the task created at ''2''. Successfully updated virtual machine state to UNKNOWN. The platform will perform a check on the physical machine. |
+| task.failed  |  VirtualFactory ''0'' task (ID ''1'') on owner ''2'' (is ''3'') returned an error: ''4'' |
+| task.failed.vm.dontexists |  VirtualFactory task on virtual machine ID ''0'' and owner ''1'' failed on the platform because the virtual machine does not exist on the hypervisor. Aborted the task created at ''2''. Successfully updated virtual machine state to ''4''. |
+
+h6.   Jobs
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| job.failed  |  VirtualFactory job ''0'' with ID ''1'' in task ''2'' for virtual machine ''3'' failed.-  Reason: ''4''.  |
+| job.failed.user  |  Job failed. Please try again in a few minutes or contact your system administrator |
+
+h6.   Change state handler
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| changestate.handler.failed  |  Change state (task ID ''0'') on virtual machine name ''1'' failed |
+| changestate.handler.done  |  Change state (task ID ''0'') to ''1'' on virtual machine name ''2'' done |
+
+h6.   HA handler
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| ha.handler.vmmoved  |  HA task (ID=''0'') on Virtual Machine ''1'' finished OK |
+| ha.handler.move.failed  |  HA Move (task ID ''0'') on virtual machine ''1'' failed |
+| ha.handler.move.failed.subscribe  |  HA Move task on virtual machine ''0'' failed: Subscribing to VSM |
+| ha.handler.move.failed.unsubscribe  |  HA Move task on virtual machine ''0'' failed: Unsubscribing from VSM |
+| ha.handler.move.failed.updating  |  HA Move (task ID ''0'') on virtual machine ''1'' failed: Updating the virtual machine state ''2'' and Hypervisor ''3'' |
+| ha.handler.move.failed.updating2  |  HA Move (task ID ''0'') on virtual machine ''1'' failed: Updating the virtual machine state ''2'' |
+| ha.handler.move.rollback  |  HA Move (task ID ''0'') on virtual machine ''1'' failed: Freeing resources used by the virtual machine |
+| ha.handler.job.aborted.log  |  HA Move (task ID ''0'') on virtual machine ID ''1'' encountered a problem and failed to complete |
+| ha.handler.job.aborted.unknwon.system  |  HA Move (task ID ''0'') on virtual machine ''1'' failed: Updating the virtual machine to state ''2'' |
+| ha.handler.job.aborted.delete.system  |   HA Move (task ID ''0'') on virtual machine ''1'' failed: The platform created a virtual machine in the hypervisor on machine name ''2''. |
+
+h6.   Instance handler
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| instance.handler.user.success  |  Instance on virtual machine ID ''0'' done |
+| instance.handler.system.success  |  Instance (task ID ''0'') on virtual machine ID ''1'' done |
+| instance.handler.user.failed  |  Instance on virtual machine ID ''0'' failed |
+| instance.handler.system.failed  |  Instance (task ID ''0'') on virtual machine ID ''1'' failed |
+| instance.handler.user.aborted  |  Instance on virtual machine ID ''0'' aborted |
+| instance.handler.system.aborted  |  Instance (task ID ''0'') on virtual machine ID ''1'' aborted |
+| instance.handler.user.statefuldump  |  Failed to start the volume dump for stateful virtual machine ''0''. |
+| instance.handler.system.statefuldump  |  Failed to start the volume dump for stateful virtual machine ''0''. |
+
+h6.   Reconfigure handler
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| reconfigure.handler.job.aborted.log  |   Reconfigure (task ID ''0'') on virtual machine ID ''1'' encountered a problem and failed to complete |
+| reconfigure.handler.job.aborted.system  |   Reconfigure (task ID ''0'') on virtual machine ID ''1'' failed: Updating the virtual machine to state ''2'' |
+
+h6.   Refresh resources handler
+|| Internal Message ID {color:#efefef}_________________________________________{color}|| Message {color:#efefef}___________________________________________________________________________{color} ||
+| refresh.handler.success  |  Resources of virtual machine ''0'' refreshed |
+| refresh.handler.user.failed  |  Resources of virtual machine ''0'' could not be refreshed |
+| refresh.handler.system.failed  |  Refresh resources (task ID ''0'') operation on virtual machine ID ''1'' failed |
+ 
+

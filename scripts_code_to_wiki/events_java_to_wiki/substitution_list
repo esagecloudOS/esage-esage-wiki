@@ -1,0 +1,11 @@
+Substitutions:
+Statuscodes
+Dhcp_option
+Rabbitmq
+Ssm
+Ovf package list
+Vlans
+
+pagging - wtf?
+Blank header before Chef = Auxiliary hard disk
+Blank header before Ovf package list = Appliance manager

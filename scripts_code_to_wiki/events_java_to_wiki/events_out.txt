@@ -1,0 +1,264 @@
+
+h5.  Unknow event.
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 0 | UNKNOWN | Unknown event |
+
+h5.  User-related events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 100 | USER_LOGIN | User logged in |
+| 101 | USER_LOGOUT | User logged out |
+| 102 | USER_CREATE | User created |
+| 103 | USER_DELETE | User deleted |
+| 104 | USER_MODIFY | User modified |
+| 105 | ENTERPRISE_CREATE | Enterprise created |
+| 106 | ENTERPRISE_MODIFY | Enterprise modified |
+| 107 | ENTERPRISE_DELETE | Enterprise deleted |
+
+h5.  Virtual infrastructure-related events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 200 | VM_POWERON | Started Virtual Machine |
+| 201 | VM_PAUSED | Paused Virtual Machine |
+| 202 | VM_RESUMED | Resumed Virtual Machine |
+| 203 | VM_POWEROFF | Stopped Virtual Machine |
+| 204 | VM_DESTROY | Destroyed Virtual Machine |
+| 205 | VM_MOVED | Virtual Machine moved |
+| 206 | VIRTUAL_MACHINE_HEALTH_STATE | Virtual Machine checked |
+| 207 | VM_CRASHED | Virtual Machine turned into 'crashed' state |
+| 208 | VM_UNKNOWN | Virtual Machine turned into 'unknown' state |
+| 209 | VM_UNDEPLOY_FORCED | Virtual Machine undeploy forced |
+| 210 | VDC_CREATE | Created Virtual Datacenter |
+| 211 | VDC_MODIFY | Modified Virtual Datacenter |
+| 212 | VDC_DELETE | Deleted Virtual Datacenter |
+| 213 | VAPP_CREATE | Created Virtual Appliance |
+| 214 | VAPP_MODIFY | Modified Virtual Appliance |
+| 215 | VAPP_DELETE | Deleted Virtual Appliance |
+| 216 | VAPP_POWERON | Deployed Virtual Appliance |
+| 217 | VAPP_POWEROFF | Undeployed Virtual Appliance |
+| 218 | VAPP_RUNNING | Started Virtual Appliance |
+| 219 | VAPP_MOVE | Virtual Appliance moved |
+| 220 | VAPP_COPY | Virtual Appliance copied |
+| 221 | VIRTUAL_APPLIANCE_STATE | Virtual Appliance State Refreshed |
+| 222 | VAPP_CRASHED | Virtual Appliance turned into 'crashed' state |
+| 223 | VAPP_UNKNOWN | Virtual Appliance turned into 'unknown' state |
+| 224 | VAPP_BUNDLE | Virtual Appliance bundle started |
+| 225 | VM_CREATE | Created Virtual Machine |
+| 226 | VM_DELETE | Deleted Virtual Machine |
+| 227 | VM_UNDEPLOY | Undeploy Virtual Machine |
+| 228 | VM_DEPLOY | Deploy Virtual Machine |
+| 229 | VM_STATE | Apply state Virtual Machine |
+| 230 | VM_RECONFIGURE | Reconfigure Virtual Machine |
+| 231 | VM_INSTANCE | Instance Virtual Machine |
+| 232 | VM_JOB | Common Job for Virtual Machine |
+| 233 | VM_TASK | Common Taskfor Virtual Machine |
+| 234 | VM_REFRESH_RESOURCES | Refresh virtual machine resources |
+
+h5.  Infrastructure-related events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 300 | DC_CREATE | Datacenter Created |
+| 301 | DC_MODIFY | Datacenter Modified |
+| 302 | DC_DELETE | Datacenter Deleted |
+| 303 | RACK_CREATE | Rack Created |
+| 304 | RACK_MODIFY | Rack Modified |
+| 305 | RACK_DELETE | Rack Deleted |
+| 306 | RACK_VLAN_POOL | VLAN Pool exceeded in Rack |
+| 307 | MACHINE_CREATE | Physical Machine created |
+| 308 | MACHINE_MODIFY | Physical Machine modified |
+| 309 | MACHINE_DELETE | Physical Machine deleted |
+| 310 | MACHINE_CHECK | Physical Machine checked |
+| 311 | MACHINE_RETRIEVE_VMS | Virtual Machines discovered from physical machine |
+| 312 | MACHINE_CREATED_RETRIEVED_VMS | Created Virtual Machines discovered from physical machine |
+| 313 | MACHINE_DELETE_VMS_NOTMANAGED | Not managed Virtual Machines deleted |
+| 314 | REMOTE_SERVICES_CREATE | Remote Service created |
+| 315 | REMOTE_SERVICE_UPDATE | Remote Service updated |
+| 316 | REMOTE_SERVICES_CHECK | Remote service checked |
+| 317 | REMOTE_SERVICES_DELETE | Remote Service deleted |
+| 318 | REMOTE_SERVICES_ERROR | Remote Service error |
+| 319 | REMOTE_SERVICES_SUCCESS | Remote Services Successful Creation |
+| 320 | RACK_RETRIEVAL | Retrieve Rack |
+| 321 | APPLIANCE_MANAGER_CONFIGURATION_ | The appliance manager is not well configured |
+
+h5.  Storage system-related events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 400 | SSM_CREATE | Storage System Manager created |
+| 401 | SSM_MODIFY | Storage System Manager modified |
+| 402 | SSM_DELETE | Storage System Manager deleted |
+| 403 | POOL_CREATE | Storage Pool created |
+| 404 | POOL_MODIFY | Storage Pool modified |
+| 405 | POOL_DELETE | Storage Pool deleted |
+| 406 | VOLUME_CREATE | Volume created |
+| 407 | VOLUME_MODIFY | Volume modified |
+| 408 | VOLUME_DELETE | Volume deleted |
+| 409 | VOLUME_ATTACHED | Volume attached |
+| 410 | VOLUME_DETACHED | Volume detached |
+| 411 | VOLUME_ATTACH | Volume attached |
+| 412 | VOLUME_DETACH | Volume detached |
+| 413 | VOLUME_MOVED | Volume moved |
+| 414 | GET_INITIATOR_MAPPINGS | Initiator mappings retrieved |
+| 415 | HARD_DISK_CREATE | Hard disk created |
+| 416 | HARD_DISK_DELETE | Hard disk deleted |
+| 417 | HARD_DISK_ASSIGN | Hard disk assigned |
+| 418 | HARD_DISK_UNASSIGN | Hard disk unassigned |
+
+h5.  Image-related events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 500 | VI_DOWNLOAD | Virtual Image download from a Remote Repository |
+| 501 | VI_ADD | Virtual Image added to the Appliance Library |
+| 502 | VI_DELETE | Virtual Image deleted from the Appliance Library |
+| 503 | DISK_CONVERSION | Disc conversion started |
+| 504 | RAW_IMPORT_CONVERSION | Raw import conversion started |
+| 505 | VI_UPDATE | Virtual Image updated |
+| 506 | CONVERSION_FAILED | Virtual machine template conversion failed |
+| 507 | CONVERSION_FINISHED | Virtual machine template conversion finished |
+
+h5.  Stateful related events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 600 | PERSISTENT_PROCESS_START | A Persistent conversion process has started |
+| 601 | PERSISTENT_RAW_FINISHED | A Persistent RAW conversion has finished and it is ready to be dumped to a volume |
+| 602 | PERSISTENT_VOLUME_CREATED | A Persistent volume has been created |
+| 603 | PERSISTENT_DUMP_ENQUEUED | A Persistent volume dump has been enqueued |
+| 604 | PERSISTENT_DUMP_FINISHED | A Persistent dump to a volume has finished |
+| 605 | PERSISTENT_PROCESS_FINISHED | A Persistent conversion process has finished |
+| 606 | PERSISTENT_PROCESS_FAILED | A Persistent process has failed |
+| 607 | PERSISTENT_INITIATOR_ADDED | Persistent initiator has added |
+
+h5.  License related events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 700 | LICENSE_ADDED | A new license has been added to the system |
+| 701 | LICENSE_REMOVED | A license has been removed |
+| 702 | LICENSE_CORRUPT | The license is corrupted and cannot be used |
+| 703 | LICENSE_EXCEEDED | Current license capabilities had been exceeded |
+| 704 | LICENSE_CONFIGURATION | An unexpected error occured in license managing services |
+
+h5.  Networking events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 800 | VLAN_CREATED | New VLAN created |
+| 801 | VLAN_EDITED | Vlan edited |
+| 802 | VLAN_DELETED | Vlan Deleted |
+| 803 | NIC_ASSIGNED_VIRTUAL_MACHINE | NIC assigned to a Virtual Machine |
+| 804 | NIC_RELEASED_VIRTUAL_MACHINE | NIC deassigned from a Virtual Machine |
+| 805 | PUBLIC_IP_ASSIGNED_VDC | Public IP assigned to a Virtual Datacenter |
+| 806 | PUBLIC_IP_RELEASED_VDC | Public IP released from a Virtual Datacenter |
+| 807 | IP_UNDER_QUARANTINE | IP Address put as a quarantine |
+| 808 | RELEASED_QUARANTINE | IP Address released from its quarantine |
+| 809 | PRIVATE_IP_ASSIGN | Private IP assigned |
+| 810 | PRIVATE_IP_UNASSIGN | Private IP unassigned |
+| 811 | PUBLIC_IP_ASSIGN | Public IP assigned |
+| 812 | PUBLIC_IP_UNASSIGN | Public IP unassigned |
+| 813 | NETWORK_CONFIGURATION_UPDATED | Virtual Machine's network configuration updated |
+| 814 | EXTERNAL_IP_ASSIGN | External IP assigned |
+| 815 | EXTERNAL_IP_UNASSIGN | External IP unassigned |
+| 816 | NIC_REORDER_VIRTUAL_MACHINE | Virtual Machine's NICs reordered |
+| 817 | VLAN_DEFAULT | Vlan as default one |
+| 818 | VLAN_DEFAULT_ENTERPRISE | Default VLAN by enterprise changed |
+
+h5.  Api events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 900 | API_REQUEST | Functionallity executed by API request |
+| 901 | API_RESPONSE | API response |
+
+h5.  Workload engine events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1000 | WORKLOAD_LOAD_RULES | Workload load rules |
+| 1001 | WORKLOAD_APPLY_RULES | Workload apply rules |
+| 1002 | SOFT_LIMIT_EXCEEDED | Soft limits exceded |
+| 1003 | HARD_LIMIT_EXCEEDED | Hard limits exceeded |
+
+h5.  Client-related events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1100 | THEME_UPDATE | Theme updated |
+| 1101 | UPDATE_PROPERTIES | Client properties updated |
+
+h5.  Role event
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1200 | ROLE_CREATED | Role created |
+| 1201 | ROLE_MODIFIED | Role updated |
+| 1202 | ROLE_DELETED | Role deleted |
+| 1203 | ROLE_PRIVILEGES_MODIFY | Role's privileges modified |
+
+h5.  Roleldap event
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1300 | ROLE_LDAP_CREATED | Role ldap created |
+| 1301 | ROLE_LDAP_MODIFIED | Role ldap updated |
+| 1302 | ROLE_LDAP_DELETED | Role ldap deleted |
+
+h5.  Ha engine events
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1400 | MACHINE_DISABLED_BY_HA | Machine disabled by HA engine. |
+| 1401 | VAPP_BLOCKED_BY_HA | Virtual appliance block by HA engine |
+| 1402 | VM_MOVING_BY_HA | Virtual machine being moved by HA engine |
+
+h5.  Allocation rules
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1500 | ALLOCATION_RULES_APPLIED | Allocation rules applied |
+| 1501 | ALLOCATION_RULE_REMOVED | Allocation rule removed |
+
+h5.  Pricing template
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1600 | PRICING_TEMPLATE_CREATED | Pricing Template created |
+| 1601 | PRICING_TEMPLATE_MODIFIED | Pricing Template updated |
+| 1602 | PRICING_TEMPLATE_DELETED | Pricing Template deleted |
+| 1603 | PRICING_TEMPLATE_ASSIGNED | Pricing Template assigned |
+
+h5.  Costcode_currency
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1900 | COSTCODE_CURRENCY_CREATED | Cost Code -Currency created |
+| 1901 | COSTCODE_CURRENCY_MODIFIED | Cost Code -Currency updated |
+| 1902 | COSTCODE_CURRENCY_DELETED | Cost Code -Currency deleted |
+
+h5.  Costcode_currency
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1800 | COSTCODE_CREATED | Cost Code created |
+| 1801 | COSTCODE_MODIFIED | Cost Code updated |
+| 1802 | COSTCODE_DELETED | Cost Code deleted |
+
+h5.  Currency
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1900 | CURRENCY_CREATED | Currency created |
+| 1901 | CURRENCY_MODIFIED | Currency updated |
+| 1902 | CURRENCY_DELETED | Currency deleted |
+
+h5.  Storage device
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1600 | STORAGE DEVICE CREATED | Storage device created |
+| 1601 | STORAGE DEVICE MODIFIED | Storage device modified |
+| 1602 | STORAGE DEVICE DELETED | Storage device deleted |
+
+h5.  Chef
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1510 | CHEF_RUNLIST_ADD | Add an element to the runlist |
+| 1511 | CHEF_RUNLIST_DELETE | Remove an element from the runlist |
+| 1512 | CHEF_NODE_UPDATE | Update a Chef node update |
+| 1513 | CHEF_RUNLIST_UPDATE | Chef runlist update |
+| 1513 | CHEF_SERVER_CONNECT | Chef Server connect |
+
+h5.  Category
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1700 | CATEGORY CREATED | Category created |
+| 1701 | CATEGORY MODIFIED | Category modified |
+| 1702 | CATEGORY DELETED | Category deleted |
+
+h5.  Ovf packages lists
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1800 | OVFPACKAGE LIST CREATED | OVFPackage list created |
+| 1801 | OVFPACKAGE LIST DELETED | OVFPackage list deleted |
+| 1802 | OVFPACKAGE LIST MODIFIED | OVFPackage list modified |
+
+h5.  Instance process
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1803 | INSTANCE_PROCESS_START | A Intance conversion process has started |
+| 1804 | INSTANCE_PROCESS_FINISHED | A Instance conversion process has finished succesfuly |
+| 1805 | INSTANCE_PROCESS_FAILED | A Instance conversion process has failed |
+
+h5.  Asynch handlers
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1900 | ASYNC_HANDLER_RESPONSE | Asynchronous hander response |
+
+h5.  Ucs
+|| Event No. || Internal Message ID {color:#efefef}__________________{color}|| Message {color:#efefef}____________________________________________________________{color} ||
+| 1700 | UCS_COMMUNICATION_PROBLEM | There is a problem accessing to UCS. Might be due to several causes. Check that UCS is working |
+| 1701 | UCS_BLADE_ASSOCIATION | Blade associated with a Service Profile in UCS |
+| 1702 | UCS_DISASSOCIATE | Removed blade's association with UCS Service Profile |
+| 1703 | SERVICE_PROFILE_DELETED | Service Profile deletion in UCS |
+| 1704 | UCS_BLADE_POWER_OFF | Blade powered off in UCS |
+| 1705 | UCS_BLADE_POWER_ON | Blade powered on in UCS");
+ |
